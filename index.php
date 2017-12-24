@@ -33,21 +33,26 @@
 		//echo ($usuario);
 
 	//Criando um novo usuário
-	//$aluno = new Usuario("pedro","456");
+		//$aluno = new Usuario("pedro","456");
 
-	//$aluno->insert();
+		//$aluno->insert();
 
-	//echo $aluno;
+		//echo $aluno;
 
 	//Atualizando um usuário
+		//$usuario = new Usuario();
 
-	$usuario = new Usuario();
+		//$usuario->loadById(8);
 
-	$usuario->loadById(8);
+		//$usuario->update("professor","12345666");
 
-	$usuario->update("professor","12345666");
+		//echo $usuario;
 
-	echo $usuario;
+	//Deletando um usuário
+		$usuario = new Usuario();
+		$usuario->loadById(7);
+		$usuario->delete();
+		echo $usuario;
 
 
 
